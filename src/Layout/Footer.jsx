@@ -1,5 +1,6 @@
 import React from "react";
 import minicupcake from '../assets/Images/minicupcake.png'
+import '../StylesSheet/Styles.css'
 
 function Footer({texto1,texto2}){
     return(
