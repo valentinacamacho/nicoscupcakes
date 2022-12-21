@@ -8,6 +8,9 @@ function App() {
     <div className="App">
       <h1>prueba</h1>
 
+    <Header
+    />
+    
     < Footer
       texto1='Derechos reservados-Nico´s Cupcakes'
       texto2='2022'
