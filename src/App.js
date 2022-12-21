@@ -11,6 +11,8 @@ function App() {
     <Header
     />
 
+    
+
     < Footer
       texto1='Derechos reservados-Nico´s Cupcakes'
       texto2='2022'
