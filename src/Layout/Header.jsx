@@ -1,6 +1,7 @@
 import React from "react";
 import LogoCup from '../assets/Images/LogoCup.png'
-import iconmenu from '../assets/Images/iconmenu.png'
+import iconmenu from '../assets/Images/iconmenu.svg'
+import '../StylesSheet/Styles.css'
 
 function Header(){
   return(
@@ -8,20 +9,26 @@ function Header(){
     <header className="contenedor-principal-header">
     <div className="header">
 
-    <img className="LogoCup"
+    <div className="LogoCup">
+    <img
     src={LogoCup}
     alt='Nico´s Cupcakes'/>
+    </div>
 
-    <div className="carrito-arriba">
+    {/* <div className="carrito-arriba">
       <div className="circulo1">
         <div className="circulo2-contador">  
         </div>
       </div>
-    </div>
+    </div> */}
 
-    <img className="Icono-menu"
+    {/* <div className="Icono-menu">
+    <img 
     src={iconmenu}
     alt='Icono'/>   
+   </div> */}
+
+  
     </div>    
     </header>
   );

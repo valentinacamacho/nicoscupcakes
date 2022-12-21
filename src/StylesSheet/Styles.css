@@ -1,4 +1,4 @@
-@media screen and (max-width: 340px) {
+
   .footer{
     display: flex;
     flex-wrap: wrap;
@@ -16,4 +16,16 @@
     height: 30px;
 }
 
-}
+  .header{
+    display: flex;
+    background-color: #2C2247;
+  }
+
+  .LogoCup img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .Icono-menu{
+    width: 30px;
+  }
