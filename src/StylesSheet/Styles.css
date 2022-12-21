@@ -7,7 +7,6 @@
     color: white;
     background-color: #2C2247;
     margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 15px;
   }
 
@@ -68,20 +67,54 @@
     top: 10px;
   }
 
+    .Contenedor-principal-Categorias{
+      margin: 40px;
+      
+    }
+
   /* Elemento principal que va a contener loes otros elementos  */
   .Categorias{
-    width: 80px;
-    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300px;
+    height: 100px;
     border-radius:12px;
     background-color: #DFB5F4;
     border: 1px solid #9973B2;
-
   }
     /*Elemento del circulo que va a contener el icono */
   .circulo-categoria{
-    width: 40px;
-    height: 40px;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     background-color: #9973B2;
     border: 2px solid #8500ED;
   }
+
+    /* Elemento que va a contener los iconos de categoria */
+  .circulo-categoria img{
+    width: 40px;
+    margin: 5px;
+  }
+
+    /* Tamaño de tipografia de las categorias*/
+  .texto-categoria p{
+    font-size: 20px;
+  }
+  
+    /* Elemento principal donde el contenedor principal debe ser flex */
+  .categorias-categorias{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .categorias-texto2{
+    font-size: 25px;
+  }
+
+
+  

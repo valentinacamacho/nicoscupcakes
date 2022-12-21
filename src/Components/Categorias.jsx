@@ -3,18 +3,19 @@ import '../StylesSheet/Styles.css'
 
 function Categorias(props){
     return(
-        <div className="Conteedor-principal-Categorias">
+        <div className="Contenedor-principal-Categorias">
+
           <div className="Categorias">
 
             <div className="circulo-categoria">
-            <img
-            src={require(`../Images/categoria-${props.icono}.jpg`)}
-            alt='icon'
-            />
+              <img
+              src={require(`../assets/Images/categoria-${props.icono}.png`)}
+              alt='icon'
+              />             
             </div>
 
             <div className="texto-categoria">
-              <p>{props.texto}</p>
+              <p >{props.texto}</p>
             </div>
 
           </div>
