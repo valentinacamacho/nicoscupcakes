@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Layout/Header'
 import Footer from './Layout/Footer'
+import Categorias from './Components/Categotias';
 
 
 
@@ -11,7 +12,8 @@ function App() {
     <Header
     />
 
-    
+    <Categorias
+    />
 
     < Footer
       texto1='Derechos reservados-Nico´s Cupcakes'
