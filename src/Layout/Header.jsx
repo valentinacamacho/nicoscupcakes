@@ -1,6 +1,6 @@
 import React from "react";
 import LogoCup from '../assets/Images/LogoCup.png'
-import iconmenu from '../assets/Images/icon-menu.png'
+import iconmenu from '../assets/Images/iconmenu.png'
 
 function Header(){
   return(
