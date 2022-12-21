@@ -1,6 +1,7 @@
 import React from "react";
 import LogoCup from '../assets/Images/LogoCup.png'
 import iconmenu from '../assets/Images/iconmenu.svg'
+import carrito from '../assets/Images/carrito.svg'
 import '../StylesSheet/Styles.css'
 
 function Header(){
@@ -17,12 +18,14 @@ function Header(){
 
     <div className="carrito-arriba-contador">
       <div className="circulo1">
+
         <div className="icon-carrito">
           <img
           src={carrito}
           alt='carrito'
           />
         </div>
+        
         <div className="circulo2-contador">  
         </div>
       </div>
