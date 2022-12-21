@@ -1,5 +1,5 @@
-
-  .footer{
+ /* footer */
+ .footer{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -11,21 +11,32 @@
     font-size: 15px;
   }
 
-  .icono-cupcake-footer{
+  /* icono del footer */
+  .icono-cupcake-footer img{
     width: 30px;
     height: 30px;
 }
 
+/* encabezado */
   .header{
     display: flex;
     background-color: #2C2247;
   }
 
+/*logo de Nico's cupcakes  */
   .LogoCup img{
     width: 100px;
     height: 100px;
+    margin: 10px;
   }
 
-  .Icono-menu{
-    width: 30px;
+/* primer circulo que va a contener el icono */
+  .circulo1{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border-radius: 80px;
+    background-color: #DFB5F4;
+    border: 2px solid #AD5AC1;
   }
+

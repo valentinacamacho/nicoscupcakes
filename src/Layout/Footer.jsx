@@ -8,10 +8,12 @@ function Footer({texto1,texto2}) {
       <footer  className="contenedor-principal-footer" >
         <div className="footer">
         <p>{texto1}</p>
-        <img 
-        className='icono-cupcake-footer'
+
+        <div className='icono-cupcake-footer'>
+        <img  
         src={minicupcake}
         alt='cupcake' />
+        </div>
         <p>{texto2}</p>
         </div>
       </footer>

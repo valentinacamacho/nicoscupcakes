@@ -15,12 +15,12 @@ function Header(){
     alt='Nico´s Cupcakes'/>
     </div>
 
-    {/* <div className="carrito-arriba">
+    <div className="carrito-arriba-contador">
       <div className="circulo1">
         <div className="circulo2-contador">  
         </div>
       </div>
-    </div> */}
+    </div> 
 
     {/* <div className="Icono-menu">
     <img 
