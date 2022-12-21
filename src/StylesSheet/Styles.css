@@ -35,6 +35,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-left: 1150px;
+    margin-right: 10px;
   }
 
 /* primer circulo que va a contener el icono */
