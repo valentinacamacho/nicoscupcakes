@@ -40,3 +40,14 @@
     border: 2px solid #AD5AC1;
   }
 
+  /*circulo que va a tener el contador*/
+  .circulo2-contador{
+    width: 28px;
+    height: 28px;
+    border-radius: 40px;
+    position: absolute;
+    top: 45px;
+    margin-left: 17px;
+    background-color: #fff;
+    border: 1px solid #AD5AC1;
+  }

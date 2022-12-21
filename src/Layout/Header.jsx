@@ -17,6 +17,12 @@ function Header(){
 
     <div className="carrito-arriba-contador">
       <div className="circulo1">
+        <div className="icon-carrito">
+          <img
+          src={carrito}
+          alt='carrito'
+          />
+        </div>
         <div className="circulo2-contador">  
         </div>
       </div>
