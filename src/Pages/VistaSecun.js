@@ -1,9 +1,10 @@
 import Header from '../Layout/Header'
 import Footer from '../Layout/Footer'
 import '../StylesSheet/Styles.css'
+import avatar from '../assets/Images/avatar.png'
 
 
-function VistaSecun (avatar){
+function VistaSecun (){
     return(
       <div className="vistasecun">
 
