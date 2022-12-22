@@ -10,11 +10,11 @@ function Header(){
     <header className="contenedor-principal-header">
     <div className="header">
 
-    <div className="LogoCup">
-    <img
-    src={LogoCup}
-    alt='Nico´s Cupcakes'/>
-    </div>
+      <div className="LogoCup">
+        <img
+        src={LogoCup}
+        alt='Nico´s Cupcakes'/>
+      </div>
 
     <div className="carrito-arriba-contador">
       <div className="circulo1">

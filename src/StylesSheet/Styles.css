@@ -6,7 +6,7 @@
     justify-content: center;
     color: white;
     background-color: #2C2247;
-    margin-top: 20px;
+    margin-top: 80px;
     font-size: 15px;
   }
 
@@ -20,6 +20,7 @@
   .header{
     display: flex;
     background-color: #2C2247;
+    justify-content: space-between;
   }
 
 /*logo de Nico's cupcakes  */
@@ -34,8 +35,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 1150px;
-    margin-right: 10px;
+    margin-right: 20px;
+
   }
 
 /* primer circulo que va a contener el icono */
@@ -68,7 +69,10 @@
   }
 
     .Contenedor-principal-Categorias{
-      margin: 40px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
       
     }
 
@@ -112,9 +116,21 @@
     justify-content: center;
   }
 
+  .textos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .categorias-texto2{
     font-size: 25px;
   }
 
+  .categorias-texto3{
+    width: 570px;
+    font-size: 20px;
+    text-align: center;
+  }
 
   
