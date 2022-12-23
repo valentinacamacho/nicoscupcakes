@@ -136,9 +136,9 @@
     text-align: center;
   }
 
-
+  /* Recuadro color  morado */
   .Recuadro-Vistasecun {
-    width: 750px;
+    width: 870px;
     height: 374px;
     margin: 1% auto;
     display: flex;
@@ -147,21 +147,25 @@
     background-color: #845CA9;
   }
 
+  /* Tiyulo de Quienes somos */
   .titulo-secun{
     color:#E788FF;
     border-color: 1px solid #E788FF;
   }
 
+  /* Contenedor principal de elemento de letras */
   .texto1-secun{
-    width: 350px;
+    width: 410px;
     color: #fff;
     font-size: 18px;
   }
 
+  /* avatar de Niicos cupcakes */
   .avatar img{
-    width: 199px;
+    width: 170px;
   }
 
+    /* Boton de productos */
   .boton-vistasecun button{
     width: 338px;
     height: 42px;
