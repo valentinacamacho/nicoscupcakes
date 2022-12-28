@@ -10,22 +10,29 @@ export const Cupcakes = () =>{
            <Header/>              
               {
               Cupcake.map(product => (
-              <div className="item" key={product.id}>
-                <figure className="products-cup">
-                  <img
-                    src={product.urlImage}
-                    alt={product.nameProduct}
-                    />
-                </figure>
-              <div className="info-product">
-                <h2>{product.nameProduct}</h2>
-                <p>${product.price}</p>
-              </div>
-          </div>
+                <div className="item" key={product.id}>  
+                  <div className="flip-card">
+                    <div className="flip-card-inner">
+                      <div className="flip-card-front">
+                        <div className="products-cup">
+                          <img
+                            src={product.urlImage}
+                            alt={product.nameProduct} 
+                          />
+                        </div>
+                      </div>
+                        <div className="flip-card-back">
+                          <h3>{product.nameProduct}</h3> 
+                          <p>${product.price}</p> 
+                          <button >Añadir al carrito</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
          
         ))}
 
-          < Footer
+          <Footer
             texto1='Derechos reservados-Nico´s Cupcakes'
             texto2='2022'
           />
