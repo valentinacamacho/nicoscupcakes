@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
 
-    {/* {<Home/>} */}
+    {<Home/>}
 
     {/* {<VistaSecun/> } */}
     
-    {<Cupcakes/>}
+    {/* {<Cupcakes/>} */}
     </div>
   );
 }

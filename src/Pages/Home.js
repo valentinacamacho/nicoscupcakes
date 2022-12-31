@@ -2,6 +2,9 @@ import Header from '../Layout/Header'
 import Footer from '../Layout/Footer'
 import Categorias from '../Components/Categorias';
 import '../StylesSheet/Styles.css'
+import ReactPlayer from 'react-player';
+import React from 'react';
+import video from '../assets/Video/Nicoscupcakees.mp4'
 
 function Home() {
     return (
@@ -9,6 +12,16 @@ function Home() {
   
       <Header
       />
+
+      <div className='video-Nicos'>
+        <ReactPlayer
+        url={video}
+        controls
+        loop
+        playing
+        width='50%'
+        height='50%'/>
+      </div>
   
     <div className='categorias-texto2'>
         <p>Nuestros Productos</p>
