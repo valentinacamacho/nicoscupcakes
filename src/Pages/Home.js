@@ -4,7 +4,7 @@ import Categorias from '../Components/Categorias';
 import '../StylesSheet/Styles.css'
 import ReactPlayer from 'react-player';
 import React from 'react';
-import video from '../assets/Video/Nicoscupcakees.mp4'
+/*import video from '../assets/video/nicoscupcakess.mp4'*/
 
 function Home() {
     return (
@@ -13,14 +13,13 @@ function Home() {
       <Header
       />
 
-      <div className='video-Nicos'>
+      <div className='video-Nicos' style={{width:'100%', height:'100%'}}>
         <ReactPlayer
-        url={video}
+        url='https://youtu.be/kIXXH_lwEy4'
         controls
-        loop
         playing
-        width='50%'
-        height='50%'/>
+        muted
+        onEnded={()=> alert('Se Termino el Video de Nicos Cupcakes.')}/>
       </div>
   
     <div className='categorias-texto2'>

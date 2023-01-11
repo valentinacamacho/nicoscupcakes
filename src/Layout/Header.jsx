@@ -26,7 +26,8 @@ function Header(){
           />
         </div>
         
-        <div className="circulo2-contador">  
+        <div className="circulo2-contador"> 
+        <span>0</span>
         </div>
       </div>
     </div> 
