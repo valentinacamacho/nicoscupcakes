@@ -214,7 +214,7 @@ export const Paleta = [
       nameProduct:'Paleta de pastel de grado',
       sabor:'vainilla con maracuya',
       price:16000,
-      urlImage:palimage6,
+      urlImage:palimage7,
       quantity:1,
   },
 

@@ -16,7 +16,39 @@ function Header(){
         alt='Nico´s Cupcakes'/>
       </div>
 
-    <div className="carrito-arriba-contador">
+
+    <nav>
+      <ul className="Nav-menu-horizontal">
+        <li>
+          <a href="#">inicio</a>
+        </li>
+        <li>
+          <a href="#">¡quienes somos!</a>
+        </li>
+        <li>
+          <a href="#">productos</a>
+
+          
+          <ul className="Nav-menu-vertical">
+            <li><a href="#">cupcakes</a></li>
+            <li><a href="#">mini tortas</a></li>
+            <li><a href="#">paleta de pastel</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">contactanos</a>
+        </li>
+      </ul>
+    </nav>
+
+    {/* <div className="Icono-menu">
+    <img 
+    src={iconmenu}
+    alt='Icono'/>   
+   </div> */}
+
+<div className="carrito-arriba-contador">
       <div className="circulo1">
 
         <div className="icon-carrito">
@@ -31,14 +63,6 @@ function Header(){
         </div>
       </div>
     </div> 
-
-    {/* <div className="Icono-menu">
-    <img 
-    src={iconmenu}
-    alt='Icono'/>   
-   </div> */}
-
-  
     </div>    
     </header>
   );

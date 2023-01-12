@@ -46,7 +46,7 @@
   .LogoCup img{
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 10px 20px;
   }
 
   .carrito-arriba-contador{
@@ -54,7 +54,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin: 20px;
 
   }
 
@@ -310,3 +310,50 @@
   border-radius: 12px;
 }
 
+/* menuuu */
+Nav{
+  width: 700px;
+  margin: auto;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.Nav-menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Nav-menu-horizontal > li > a{
+  display: block;
+  margin: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav-menu-horizontal > li > a:hover{
+  color: #E788FF;
+}
+
+.Nav-menu-vertical{
+  position:absolute;
+  display: none;
+  list-style: none;
+  background-color: #2C2247;
+}
+
+.Nav-menu-horizontal li:hover .Nav-menu-vertical{
+  display: block;
+}
+
+.Nav-menu-vertical li a{
+  display: block;
+  margin: auto;
+  color: #fff;
+  margin-bottom:15px ;
+  text-decoration: none;
+}
+
+.Nav-menu-vertical > li > a:hover{
+  color: #E788FF;
+}
