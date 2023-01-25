@@ -1,4 +1,5 @@
 import React from "react";
+import { SiTiktok } from "react-icons/si";
 import minicupcake from '../assets/Images/minicupcake.png'
 import '../StylesSheet/Styles.css'
 import  Instagram from '../assets/Images/Instagram.png'
@@ -8,11 +9,9 @@ import  Tiktok from '../assets/Images/Tiktok.png'
 function Footer({texto1,texto2}) {
     return(
      
-      <footer  className="contenedor-principal-footer" >
+      <footer>
         <div className="footer">
-
           <div className=" Redes-sociales">
-
             <img 
             src={Instagram}
             alt='Instagram' />
@@ -23,8 +22,7 @@ function Footer({texto1,texto2}) {
 
             <img 
             src={Tiktok}
-            alt='TikTok'/>
-            
+            alt='TikTok'/>          
           </div>
 
           <div className="linea-morada"></div>

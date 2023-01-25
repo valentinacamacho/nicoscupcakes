@@ -1,13 +1,11 @@
 import React from "react";
 import { Pastel } from "../Data/Products";
-import Header from "../Layout/Header";
-import Footer from "../Layout/Footer";
 import Carritop from "../assets/Images/carritop.png";
 
 export const Pastels = () => {
   return (
     <div className="Cupcakes">
-      <Header />
+
       <div className="tarjetas-cupcakes">
         {Pastel.map((product) => (
           <div className="item" key={product.id}>
@@ -33,8 +31,6 @@ export const Pastels = () => {
           </div>
         ))}
       </div>
-
-      <Footer texto1="Derechos reservados-Nico´s Cupcakes" texto2="2022" />
     </div>
   );
 };

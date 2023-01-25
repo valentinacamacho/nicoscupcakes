@@ -1,13 +1,31 @@
 import React from "react";
 import { Cupcake } from "../Data/Products";
-import Header from "../Layout/Header";
-import Footer from "../Layout/Footer";
 import Carritop from "../assets/Images/carritop.png";
+import Carrusel from "../Components/Carrusel";
+import carrusel1 from "../assets/Images/ProductsCupcakes/carrusel1.png";
 
-export const Cupcakes = () => {
+export const Cupcakes = ({ allProducts, setAllProducts }) => {
+  const onAddProduct = (item) => {
+    setAllProducts([...allProducts, item]);
+  };
+
+  /*let productsincart=[];
+  const onAddProduct=(item) =>{
+    productsincart=[...productsincart, item];
+      setAllProducts productsincart ;  
+        console.log('add', allProducts );
+  }*/
+
   return (
     <div className="Cupcakes">
-      <Header />
+      <div className="carrusel-cop">
+        <Carrusel
+        image={carrusel1}
+        titulo='6 cupcakes'
+        precio='$ 28.000'
+        />
+      </div>
+
       <div className="tarjetas-cupcakes">
         {Cupcake.map((product) => (
           <div className="item" key={product.id}>
@@ -24,7 +42,11 @@ export const Cupcakes = () => {
                     <h3>{product.nameProduct}</h3>
                     <p>${product.price}</p>
                     <div className="carrito-mas">
-                      <img src={Carritop} alt="Carrito" />
+                      <img
+                        onClick={() => onAddProduct(product)}
+                        src={Carritop}
+                        alt="Carrito"
+                      />
                     </div>
                   </div>
                 </div>
@@ -33,7 +55,6 @@ export const Cupcakes = () => {
           </div>
         ))}
       </div>
-      <Footer texto1="Derechos reservados-Nico´s Cupcakes" texto2="2022" />
     </div>
   );
 };

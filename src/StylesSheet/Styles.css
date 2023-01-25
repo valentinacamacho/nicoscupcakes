@@ -1,5 +1,14 @@
  /* footer */
+
+ /* .contenedor-principal-footer{
+  position: absolute;
+  bottom:0px;
+ } */
+
  .footer{
+    width: 100%;
+    position:relative;
+    bottom:0px;
     color: white;
     background-color: #2C2247;
     margin-top: 10px;
@@ -132,8 +141,10 @@
   }
 
     /* Tamaño de tipografia de las categorias*/
-  .texto-categoria p{
+  .texto-categoria {
     font-size: 20px;
+    text-decoration: none;
+    color:black;
   }
   
     /* Elemento principal donde el contenedor principal debe ser flex */
@@ -210,11 +221,7 @@
     font-size: 18px;
   }
 
-
-
-
   /* Cards de los productos */
-
   .tarjetas-cupcakes{
     display: flex;
     text-align: center;
@@ -231,7 +238,6 @@
     justify-content: center;
     width: 15%;
     margin: auto;
-
   }
 
   .flip-card > div {
@@ -239,7 +245,6 @@
     background-color: transparent;
     width: 300px;
     height: 200px;
-    
   }
   
   .flip-card-inner {
@@ -310,7 +315,7 @@
   border-radius: 12px;
 }
 
-/* menuuu */
+/* ------------ Menu Horizontal ------- */
 Nav{
   width: 700px;
   margin: auto;
@@ -356,4 +361,160 @@ Nav{
 
 .Nav-menu-vertical > li > a:hover{
   color: #E788FF;
+}
+
+/*------- componente de lista de productos------ */
+
+.ListProduct{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.lista-carrito{
+  width: 800px; 
+  height: 200px;
+  border-radius: 12px;
+  border: 1px solid #ABABAB;
+  background: #ECECEC;
+  margin: 20px;
+}
+
+.imagen-list img{
+  float: left;
+  margin: 5px;
+  width: 25%;
+  height: 25%;
+  border-radius: 12px;
+}
+
+.button-compra button{
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width:800px;
+  height: 80px;
+  background-color: #2C2247;
+  border-radius: 12px;
+}
+
+.button-compra p{
+  margin: 20px;
+  color:#FFF;
+  font-size: 18px;
+}
+
+/*----------- carrusel ---------------*/
+
+.Carrusel{
+  float: left;
+  width: 576px;
+  height: 253px;
+  margin: 3px;
+  padding: 3px;
+  background-color: #2C2247;
+} 
+
+.carrusel-cop{
+  margin: 80px;
+}
+
+.cont-princ-slider {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slier-prin {
+  display: inline-flex;
+  -moz-animation: slider 20s infinite linear;
+  -webkit-animation: slider 20s infinite linear;
+  animation: slider 20s infinite linear;
+  height: 500%;
+  width: auto;
+}
+
+.nico_cupcakes {
+  background: #2C2247;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 200%;
+  height: 250px;
+  flex: 0 0 auto;
+  text-align: center;
+  width: 570px;
+}
+
+@keyframes slider {
+  to {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+/* ------------Contenido dentro de carrusel---------------- */
+.carrusel-nico img{
+  float: left;
+  width: 10px;
+  height: 40px;
+}
+
+.carrusel-datos{
+  color: #FFF;
+}
+
+/* ------------objetivos de nicos cupcakes----------------------- */
+.items-contenedor{
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.circulo-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50px;
+  background-color: #523E8E;
+  border: 3px solid #AD5AC1;
+  margin: 10px
+}
+
+.circulo-items img{
+  width: 30px;
+}
+
+.parrafo-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:300px;
+}
+
+.color-titulo{
+  font-size: 20px;
+  color:#523E8E;
+}
+
+.items-vistase{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

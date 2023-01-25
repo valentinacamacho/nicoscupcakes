@@ -9,13 +9,11 @@ function Categorias(props){
 
             <div className="circulo-categoria">
               <img
-              src={require(`../assets/Images/categoria-${props.icono}.png`)}
-              alt='icon'
               />             
             </div>
 
             <div className="texto-categoria">
-              <p >{props.texto}</p>
+              <p>{props.texto}</p>
             </div>
 
           </div>
