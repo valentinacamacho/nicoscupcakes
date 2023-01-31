@@ -42,12 +42,6 @@ function Header({ allProducts}){
       </ul>
     </nav>
 
-    {/* <div className="Icono-menu">
-    <img 
-    src={iconmenu}
-    alt='Icono'/>   
-   </div> */}
-
     <div className="carrito-arriba-contador">
    
       <div className="circulo1">
@@ -64,7 +58,13 @@ function Header({ allProducts}){
         </div>
        
       </div>
-      
+
+         {/* <div className="Icono-menu">
+    <img 
+    src={iconmenu}
+    alt='Icono'/>   
+   </div>
+       */}
     </div> 
     </div>    
     </header>

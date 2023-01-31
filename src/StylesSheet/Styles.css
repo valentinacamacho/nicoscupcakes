@@ -105,6 +105,25 @@
     justify-content: center;
   }
 
+  @media (max-width: 760px) {
+    .video-Nicos{
+      width: 50%;
+      height: 50%;
+    }
+
+    .button-compra button{
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      width:100px;
+      height: 60px;
+      border-radius: 8px;
+    }
+
+
+  }
+
+
     .Contenedor-principal-Categorias{
       margin-left: 30px;
       margin-right: 30px;
@@ -230,6 +249,9 @@
     flex-wrap: wrap;
     width: 98vw;
   }
+
+
+
 
   .card-products{
     display: flex;
@@ -517,4 +539,16 @@ Nav{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+
+.informacion-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  float: left;
+  margin: 10px;
 }

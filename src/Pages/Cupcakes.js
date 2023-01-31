@@ -4,10 +4,13 @@ import Carritop from "../assets/Images/carritop.png";
 import Carrusel from "../Components/Carrusel";
 import carrusel1 from "../assets/Images/ProductsCupcakes/carrusel1.png";
 
-export const Cupcakes = ({ allProducts, setAllProducts }) => {
+export const Cupcakes = ({ allProducts, setAllProducts,setTotal,total }) => {
   const onAddProduct = (item) => {
     setAllProducts([...allProducts, item]);
+    setTotal(total + item.price * item.quantity)
   };
+
+
 
   /*let productsincart=[];
   const onAddProduct=(item) =>{
