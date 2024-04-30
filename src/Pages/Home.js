@@ -3,12 +3,12 @@ import "../StylesSheet/Styles.css";
 import ReactPlayer from "react-player";
 import React from "react";
 import { Link } from "react-router-dom";
-/*import video from '../assets/video/nicoscupcakess.mp4'*/
+
 
 function Home() {
   return (
     <div className="Home">
-      <div className="video-Nicos" style={{ width: "100%", height: "100%" }}>
+      <div className="video-Nicos">
         <ReactPlayer
           url="https://youtu.be/kIXXH_lwEy4"
           controls
@@ -24,15 +24,15 @@ function Home() {
 
       <div className="categorias-categorias">
         <Link className="texto-categoria" to="/Cupcakes">
-          <Categorias icono="cup" texto="Cupcakes" />
+          <Categorias icono={require('../assets/Images/categoria-cup.png')} texto="Cupcakes" />
         </Link>
 
         <Link className="texto-categoria" to="/Pastels">
-          <Categorias icono="past" texto="Mini Tortas" />
+          <Categorias icono={require('../assets/Images/categoria-past.png')} texto="Mini Tortas" />
         </Link>
 
         <Link className="texto-categoria" to="/Paletas">
-          <Categorias icono="paleta" texto="Paletas de pastel" />
+          <Categorias icono={require('../assets/Images/categoria-paleta.png')} texto="Paletas de pastel" />
         </Link>
       </div>
 
@@ -44,7 +44,7 @@ function Home() {
         <div className="categorias-texto3">
           <p>
             Todos nuestros productos son elaborados bajo pedido. Por tanto,
-            deben ser solicitados mínimo 3 dias de anticipación.
+            deben ser solicitados mínimo 3 días de anticipación.
           </p>
         </div>
       </div>

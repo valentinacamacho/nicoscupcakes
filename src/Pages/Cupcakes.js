@@ -4,7 +4,7 @@ import Carritop from "../assets/Images/carritop.png";
 import Carrusel from "../Components/Carrusel";
 import carrusel1 from "../assets/Images/ProductsCupcakes/carrusel1.png";
 
-export const Cupcakes = ({ allProducts, setAllProducts,setTotal,total }) => {
+export const Cupcakes = ({ allProducts, setAllProducts, setTotal, total }) => {
   const onAddProduct = (item) => {
     setAllProducts([...allProducts, item]);
     setTotal(total + item.price * item.quantity)
@@ -21,14 +21,6 @@ export const Cupcakes = ({ allProducts, setAllProducts,setTotal,total }) => {
 
   return (
     <div className="Cupcakes">
-      <div className="carrusel-cop">
-        <Carrusel
-        image={carrusel1}
-        titulo='6 cupcakes'
-        precio='$ 28.000'
-        />
-      </div>
-
       <div className="tarjetas-cupcakes">
         {Cupcake.map((product) => (
           <div className="item" key={product.id}>

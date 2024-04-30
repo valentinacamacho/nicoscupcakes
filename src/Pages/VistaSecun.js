@@ -34,17 +34,17 @@ function VistaSecun() {
       <div className="items-vistase">
         <Items
           titulo="Objetivo Principal"
-          texto1="Nuestro objetivo fundamental es llevarle a cada cliente un servicio personalizado y acorde a las caracteristicas de cada evento y necesidad"
+          texto1="Llevar a cada cliente un servicio personalizado y acorde a las características de cada evento y necesidad."
         />
 
         <Items
           titulo="Misión"
-          texto1="Utilizamos mejores ingredientes y buenas tecnicas para innovar nuevos sabores y recetas a nuestros clientes  con el proposito de de entregar a nuestros clientes una experiencia inolvidable de sabores"
+          texto1="Utilizar mejores ingredientes y buenas técnicas para innovar nuevos sabores y recetas, entregando una experiencia inolvidable."
         />
 
         <Items
           titulo="Visión"
-          texto1="Ser reconocida como Nico’s Cupcakes, por la calidad,excelencia y variedad que podemos brindar a nuestros clientes."
+          texto1="Ser reconocido como Nico's Cupcakes, queremos ser  la primera opción en cupcakes deliciosos, creativos y de alta calidad."
         />
       </div>
     </div>
