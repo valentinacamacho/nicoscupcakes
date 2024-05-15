@@ -1,8 +1,7 @@
 import React from "react";
 import { Cupcake } from "../Data/Products";
 import Carritop from "../assets/Images/carritop.png";
-import Carrusel from "../Components/Carrusel";
-import carrusel1 from "../assets/Images/ProductsCupcakes/carrusel1.png";
+
 
 export const Cupcakes = ({ allProducts, setAllProducts, setTotal, total }) => {
   const onAddProduct = (item) => {
@@ -35,7 +34,7 @@ export const Cupcakes = ({ allProducts, setAllProducts, setTotal, total }) => {
 
                   <div className="flip-card-back">
                     <h3>{product.nameProduct}</h3>
-                    <p>${product.price}</p>
+                    <p>${product.price.toLocaleString()}</p>
                     <div className="carrito-mas">
                       <img
                         onClick={() => onAddProduct(product)}

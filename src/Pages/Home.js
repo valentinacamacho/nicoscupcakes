@@ -37,14 +37,14 @@ function Home() {
       </div>
 
       <div className="categorias-texto2">
-        <p>Haz tu cotizacion</p>
+        <p>Haz tú cotización</p>
       </div>
 
       <div className="textos">
         <div className="categorias-texto3">
           <p>
             Todos nuestros productos son elaborados bajo pedido. Por tanto,
-            deben ser solicitados mínimo 3 días de anticipación.
+            deben ser solicitados mínimo 3 días de anticipación y deben de elegir o escribirme a mis redes sociales.
           </p>
         </div>
       </div>

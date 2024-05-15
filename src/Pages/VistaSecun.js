@@ -23,10 +23,10 @@ function VistaSecun() {
             exquisitas recetas y sabores originales; hechos con ingredientes de
             alta calidad.
           </p>
-          <p>Ofrecemos deliciosos Cupcakes, Mini tortas y paletas de pastel</p>
+          <p>Ofrecemos deliciosos Cupcakes, Mini tortas y paletas de pastel.</p>
           <p>
             Somos un emprendimiento artesanal donde dedicamos el tiempo
-            necesario a las necesidades del cliente
+            necesario a las necesidades del cliente.
           </p>
         </div>
       </div>

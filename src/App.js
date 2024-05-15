@@ -81,7 +81,7 @@ function App() {
         />
       </Routes>
 
-      <Footer texto1="Derechos reservados-Nico´s Cupcakes" texto2="2022" />
+      <Footer texto1="Derechos reservados-Nico´s Cupcakes" texto2="2024" />
     </div>
   );
 }

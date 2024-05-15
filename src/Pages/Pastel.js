@@ -2,7 +2,12 @@ import React from "react";
 import { Pastel } from "../Data/Products";
 import Carritop from "../assets/Images/carritop.png";
 
-export const Pastels = () => {
+export const Pastels = ({allProducts, setAllProducts, setTotal,total}) => {
+  const onAddProduct = (item) => {
+    setAllProducts([...allProducts,item]);
+    setTotal(total + item.price * item.quantity)
+  };
+
   return (
     <div className="Cupcakes">
 
@@ -20,9 +25,11 @@ export const Pastels = () => {
 
                   <div className="flip-card-back">
                     <h3>{product.nameProduct}</h3>
-                    <p>${product.price}</p>
+                    <p>${product.price.toLocaleString()}</p>
                     <div className="carrito-mas">
-                      <img src={Carritop} alt="Carrito" />
+                      <img onClick={() => onAddProduct(product)}
+                      src={Carritop} 
+                      alt="Carrito" />
                     </div>
                   </div>
                 </div>
