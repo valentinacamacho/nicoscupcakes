@@ -351,6 +351,15 @@ svg {
     margin: 3% auto;
     padding: 10px;
   }
+
+  /* Contenedor principal de elemento de letras */
+.texto1-secun {
+  width: 310px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
 }
 
 /* Tiyulo de Quienes somos */
@@ -361,7 +370,8 @@ svg {
 
 /* Contenedor principal de elemento de letras */
 .texto1-secun {
-  width: 410px;
+  margin: 20px;
+  width: 310px;
   color: #fff;
   font-size: 18px;
 }
