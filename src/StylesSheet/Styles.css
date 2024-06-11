@@ -535,7 +535,7 @@ svg {
 
 .button-compra p {
   margin: 20px;
-  color: #fff;
+  color: #dbdbdb;
   font-size: 18px;
 }
 
@@ -544,6 +544,38 @@ svg {
   position: absolute;
   margin-top: 10%;
   right: 20%;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .lista-carrito,
+  .button-compra button{
+    width: 90%;
+    height: auto; 
+  }
+
+  .mensaje-carrito-vacio {
+    width: 90%;
+}
+
+  .button-compra button {
+    height: 90px; 
+  }
+
+  .button-compra p {
+    font-size: 12px; 
+  }
+
+  .informacion-list{
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .trashIcon {
+    margin-top: 5%; 
+    right: 10%; 
+  }
 }
 
 /* ------------objetivos de nicos cupcakes----------------------- */

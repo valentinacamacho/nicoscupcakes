@@ -36,9 +36,9 @@ function Header({ allProducts }) {
                 <li><Link to="/Paletas">paleta de pastel</Link></li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <a href="#">contactanos</a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
