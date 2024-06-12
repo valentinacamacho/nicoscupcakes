@@ -23,7 +23,7 @@ export const Paletas = ({ allProducts, setAllProducts, setTotal, total }) => {
   const items = [
     {
       image: pro1,
-      titulo: "Miní tortas de 10CM personalizadas.",
+      titulo: "Paletas de pastel personalizadas.",
       precio: "$51.000 COP",
       cantidad: "6 Palestas ",
     },
