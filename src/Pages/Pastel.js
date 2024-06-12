@@ -25,13 +25,13 @@ export const Pastels = ({ allProducts, setAllProducts, setTotal, total }) => {
       image: pro1,
       titulo: "Miní tortas de 10CM personalizadas.",
       precio: "$25.000 COP",
-      cantidad: "2 Palestas ",
+      cantidad: "2 Miní Tortas",
     },
     {
       image: pro2,
       titulo: "Miní tortas de 10CM personalizadas.",
       precio: "$50.000 COP",
-      cantidad: "4 Paletas",
+      cantidad: "4 Miní Tortas",
     },
   ];
   return (

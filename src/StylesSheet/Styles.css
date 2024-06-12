@@ -316,6 +316,14 @@ svg {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .categorias-texto3 p{
+    width: 90%;
+    margin: 20px; 
+    font-size: 16px; 
+  }
+}
+
 /* Recuadro color  morado */
 .Recuadro-Vistasecun {
   width: 870px;
