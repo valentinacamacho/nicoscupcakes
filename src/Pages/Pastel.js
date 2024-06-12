@@ -42,7 +42,8 @@ export const Pastels = ({ allProducts, setAllProducts, setTotal, total }) => {
           Titulocarru="Miní Tortas de 10CM"
           Descarru="Ofrecemos deliciosas Miní Tortas personalizados. Visualiza nuestro catálogo para descubrir una variedad de sabores. ¡Elige el tuyo y contáctanos para ordenar!"
         />
-        <div className="tarjetas-cupcakes"></div>
+        </div>
+        <div className="tarjetas-cupcakes">
         {Pastel.map((product) => (
           <div className="item" key={product.id}>
             <div className="card-products">
