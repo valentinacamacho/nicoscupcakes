@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Paleta } from "../Data/Products";
 import Carritop from "../assets/Images/carritop.png";
 
-export const Paletas = ({allProducts, setAllProducts,setTotal, total}) => {
-  const onAddProduct = (item) =>{
-    setAllProducts([...allProducts, item]);
-    setTotal(total + item.price * item.quantity)
+export const Paletas = ({ allProducts, setAllProducts, setTotal, total }) => {
+  const [selectedPaletas, setSelectedPaletas] = useState([]);
+
+  const onAddProduct = (item) => {
+    const productExist = selectedPaletas.some((product) => product.id === item.id);
+    if (!productExist) {
+      const newSelectedPaletas = [...selectedPaletas, item];
+      setSelectedPaletas(newSelectedPaletas);
+      setAllProducts([...allProducts, item]);
+      setTotal(total + item.price * item.quantity);
+    }
   };
 
   return (
@@ -27,11 +34,11 @@ export const Paletas = ({allProducts, setAllProducts,setTotal, total}) => {
                     <h3>{product.nameProduct}</h3>
                     <p>${product.price.toLocaleString()}</p>
                     <div className="carrito-mas">
-                      <img 
-                      onClick={() => onAddProduct
-                      (product)}
-                      src={Carritop}
-                      alt="Carrito" />
+                      <img
+                        onClick={() => onAddProduct
+                          (product)}
+                        src={Carritop}
+                        alt="Carrito" />
                     </div>
                   </div>
                 </div>

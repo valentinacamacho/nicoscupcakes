@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Pastel } from "../Data/Products";
 import Carritop from "../assets/Images/carritop.png";
 
-export const Pastels = ({allProducts, setAllProducts, setTotal,total}) => {
+export const Pastels = ({ allProducts, setAllProducts, setTotal, total }) => {
+  const [selectedPastel, setSelectedPastel] = useState([]);
+
   const onAddProduct = (item) => {
-    setAllProducts([...allProducts,item]);
-    setTotal(total + item.price * item.quantity)
+    const ProductExist = selectedPastel.some((product) => product.id === item.id);
+    if (!ProductExist) {
+      const newSelectedPastel = [...selectedPastel, item];
+      setSelectedPastel(newSelectedPastel);
+      setAllProducts([...allProducts, item]);
+      setTotal(total + item.price * item.quantity)
+    }
   };
 
   return (
@@ -28,8 +35,8 @@ export const Pastels = ({allProducts, setAllProducts, setTotal,total}) => {
                     <p>${product.price.toLocaleString()}</p>
                     <div className="carrito-mas">
                       <img onClick={() => onAddProduct(product)}
-                      src={Carritop} 
-                      alt="Carrito" />
+                        src={Carritop}
+                        alt="Carrito" />
                     </div>
                   </div>
                 </div>
