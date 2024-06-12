@@ -1,16 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactWhatsapp from "react-whatsapp";
 import "../StylesSheet/Styles.css";
 import { TfiTrash } from "react-icons/tfi";
 
-function ListProducts({ allProducts, total }) {
+function ListProducts({allProducts, setAllProducts, total, setTotal}) {
   const [products, setProducts] = useState(allProducts);
-  const [currentTotal, setCurrentTotal] = useState(total);
+
+  useEffect(() => {
+    setProducts(allProducts);
+  }, [allProducts]);
 
   const handleDeleteProduct = (productId, price) => {
     const updatedProducts = products.filter(product => product.id !== productId);
     setProducts(updatedProducts);
-    setCurrentTotal(prevTotal => prevTotal - price);
+    setAllProducts(updatedProducts);
+    setTotal(prevTotal => prevTotal - price);
   };
 
   const productsMessage = products.map(product => {
@@ -36,16 +40,16 @@ function ListProducts({ allProducts, total }) {
       ))}
 
       <div className="button-compra">
-        {currentTotal === 0 ? (
+        {total === 0 ? (
           <p className="mensaje-carrito-vacio">No hay nada en el carrito</p>
         ) : (
           <ReactWhatsapp
             number="+57-320-468-8410"
             message={`Un gusto que viste nuestros productos en la página de Nico's Cupcakes. Lo que seleccionaste fue:\n${productsMessage}
-            \nPara un total de $${currentTotal.toLocaleString()}`}
+            \nPara un total de $${total.toLocaleString()}`}
           >
             <p>Continuar con la compra vía a WhatsApp</p>
-            <p>${currentTotal.toLocaleString()}</p>
+            <p>${total.toLocaleString()}</p>
           </ReactWhatsapp>
         )}
       </div>
